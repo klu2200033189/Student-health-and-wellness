@@ -1,0 +1,266 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Styles */
+.header-container {
+    background-color: #00204e;
+    padding: 10px 20px;
+    color: white;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+/* Logo Container */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-container .logo {
+    width: 50px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.logo-container h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Heading Container */
+.heading-container {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.heading-container h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    background-color: #e3e3e3;
+    list-style: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #00204e;
+    font-weight: bold;
+}
+
+/* Dashboard Dropdown Styles */
+.dashboard-dropdown .dashboard-content {
+    display: none;
+    position: absolute;
+    background-color: rgba(227, 227, 227, 0.9) !important; /* Semi-transparent background with !important */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 5px;
+    right: 0;
+}
+
+.dashboard-dropdown .dashboard-content a {
+    color: #00204e !important;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+.dashboard-dropdown .dashboard-content a:hover {
+    background-color: rgba(0, 32, 78, 0.8) !important;
+    color: white !important;
+}
+
+.dashboard-dropdown:hover .dashboard-content {
+    display: block !important;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+/* Overlay Styles */
+.overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+/* Button Styles */
+.overlay button {
+    background-color: #00204e;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* Section Styles */
+.welcome-section, .new-hoos-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.welcome-section h3, .new-hoos-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #00204e;
+}
+
+.welcome-section p, .new-hoos-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.new-hoos-section {
+    background-color: #00204e;
+    color: #ffffff; /* Change text color to white */
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+
+.new-hoos-section h3 {
+    color: #ffffff; /* Change heading color to white */
+}
+
+
+.highlighted-text {
+    color: #ffffff; /* Change highlighted text color to white */
+}
+
+/* Appointments Page Styles */
+.appointments-page {
+    background-image: url('images/building.jpg'); /* Ensure the path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 20px; /* Optional padding */
+    min-height: 100vh;
+}
+
+
+/* Team Content Styles */
+.team-content {
+    float: right;
+    width: 70%;
+    padding: 20px;
+    background-image: url('images/building.jpg'); /* Update the path as needed */
+    background-size: cover;
+    background-position: center;
+}
+
+.team-member {
+    display: flex;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    padding: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent to make text readable */
+}
+
+.team-member img {
+    border-radius: 50%;
+    margin-right: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+.team-member-info {
+    max-width: 80%;
+}
+
+.team-member-info h3 {
+    color: #f07d00;
+    margin-bottom: 10px;
+}
+
+.team-member-info p {
+    margin: 5px 0;
+}
+
+/* Sidebar Styles */
+.mental-health-sidebar {
+    float: left;
+    width: 25%;
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.mental-health-sidebar h2 {
+    color: #f07d00;
+}
+
+.mental-health-sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.mental-health-sidebar ul li {
+    margin: 10px 0;
+}
+
+.mental-health-sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.mental-health-sidebar ul li a:hover {
+    color: #f07d00;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #00204e;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 18px;
+    width: 100%;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+footer:hover {
+    background-color: #0047ab;
+}
